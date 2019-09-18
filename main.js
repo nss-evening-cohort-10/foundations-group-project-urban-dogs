@@ -62,7 +62,7 @@ const printGear = (arr) => {
     let domString = '<div class="row">';
     for (let i = 0; i < arr.length; i++) {
         domString += `
-        <div class="col">
+        <div class="col-4">
             <h5 class="card-title">${arr[i].TShirt}</h5>
             <div class="card" style="width: 18rem;">
                 <img src="${arr[i].Picture}" class="card-img-top" alt="...">
