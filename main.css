@@ -1,3 +1,27 @@
 body {
     background-color: black;
 }
+
+.albumsHeading {
+    color: white;
+    text-align: center;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+.albumCards {
+    color: white;
+    text-align: center;
+}
+
+
+.card-img-top {
+
+    width: 250px;
+    align-self: center;
+    margin: 20px;
+}
+
+.card {
+    width: 300px;
+}
