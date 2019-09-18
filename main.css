@@ -2,26 +2,74 @@ body {
     background-color: black;
 }
 
+
+.navbar-custom {
+    
+    background-color: black;
+}
+
+.navbar-nav {
+    color: white !important;
+    
+}
+
+.navbar-dark .navbar-toggler {
+    color: rgba(255,255,255,.5);
+    border-color: rgba(255,255,255,.8);
+}
+
+
+.navbar-toggler {
+    color: white !important;
+}
+
+.nav-link {
+    color: white;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+
+col-lg-4 i {
+    display:block;
+    text-align:center
+}
+
+.fab  {
+    align-content: center;
+    color: white;
+    font-size: 2em;
+    
+}
+
+.centered {
+    align-self: center;
+
+}
+
 .albumsHeading {
     color: white;
     text-align: center;
     margin-top: 1.5em;
     margin-bottom: 1.5em;
 }
-
-.albumCards {
-    color: white;
-    text-align: center;
-}
-
-
-.card-img-top {
-
-    width: 250px;
-    align-self: center;
-    margin: 20px;
-}
-
-.card {
-    width: 300px;
-}
+                
+                .albumCards {
+                    color: white;
+                    text-align: center;
+                }
+                
+                
+                .card-img-top {
+                
+                    width: 250px;
+                    align-self: center;
+                    margin: 20px;
+                }
+                
+                .card {
+                    width: 300px;
