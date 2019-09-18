@@ -58,18 +58,32 @@ col-lg-4 i {
     margin-bottom: 1.5em;
 }
                 
-                .albumCards {
-                    color: white;
-                    text-align: center;
-                }
-                
-                
-                .card-img-top {
-                
-                    width: 250px;
-                    align-self: center;
-                    margin: 20px;
-                }
-                
-                .card {
-                    width: 300px;
+.albumCards {
+    color: white;
+    text-align: center;
+}
+
+
+.card-img-top {
+    width: 250px;
+    align-self: center;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.card {
+    background-color: slategray;
+    margin: 10px;
+}
+
+.card-title {
+    text-align: center;
+    padding: 10px;
+}
+
+.card-header {
+    background-color: chartreuse;
+}
+
+
+

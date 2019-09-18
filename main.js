@@ -41,16 +41,21 @@ const buildAlbums = (albumArray) => {
         const album = albumArray[i];
         domString += 
         `
-        <div class="col-sm-4">
+        <div class="col-4">
             <div class="card" style="width: 300px;">
                 <img src="${album.albumArt}" class="card-img-top" alt="Image of ${album.albumTitle}">
-                    <div class="card-body" >
-                        <h5 class="card-title">${album.albumTitle}</h5>
-                        <p class="card-text">Top 3 songs</p>
-                        <p class="card-text">1. ${album.songs[0]}</p>
-                        <p class="card-text">2. ${album.songs[1]}</p>
-                        <p class="card-text">3. ${album.songs[2]}</p>
-                    </div>
+                <div class="card-body" >
+                <h5 class="card-title">${album.albumTitle}</h5>
+                
+                <div class="card-header">Top 3 songs</div>
+                    
+                <ul class="list-group list-group-flush">
+                        <li class="list-group-item">1. ${album.songs[0]}</li>
+                        <li class="list-group-item">2. ${album.songs[1]}</li>
+                        <li class="list-group-item">3. ${album.songs[2]}</li>
+                    </ul>
+                    
+                </div>
             </div>
         </div>
         `
