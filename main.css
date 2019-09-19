@@ -34,10 +34,6 @@ footer {
     color: white;
 }
 
-col-lg-4 i {
-    display:block;
-    text-align:center
-}
 
 .fab  {
     align-content: center;
@@ -50,6 +46,9 @@ col-lg-4 i {
     align-self: center;
 
 }
+
+
+/* Album page CSS BEGIN*/
 
 .albumsHeading {
     color: white;
@@ -64,26 +63,31 @@ col-lg-4 i {
 }
 
 
-.card-img-top {
+.album-card-img-top {
     width: 250px;
     align-self: center;
     margin: 20px;
     border-radius: 10px;
 }
 
-.card {
+.album-card {
     background-color: slategray;
     margin: 10px;
 }
 
-.card-title {
+.album-card-title {
     text-align: center;
-    padding: 10px;
+
 }
 
-.card-header {
-    background-color: chartreuse;
+.album-card-header {
+    background-color: black;
+    text-align: center;
+    color: white;
 }
 
+.album-row {
+    justify-content: center;
+}
 
-
+/* Album page CSS END*/
