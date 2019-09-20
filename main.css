@@ -3,14 +3,36 @@ body {
 }
 
 .page-title {
-    margin-top: 50px;
-    /* margin-left: 250px; */
-    background-color: aquamarine;
+    margin-top: 30px;
+    margin-left: 160px;
+    background-color: aquamarine; 
     text-align: center;
     text-shadow: 100px;
+    margin-bottom: 30px;
+    margin-right: 160px;
 }
 
-.nav-bar {
-background-color: blueviolet;
-margin-right: 0%;
+/* .card {
+    width: 350px;
+    /* margin: 0 auto; */
+    /* margin-left: 50px; */
+/* } */ 
+
+.card-img-top {
+    width: 350px;
+    height: 350px;
 }
+
+.heni {
+    margin-bottom: 50px;
+    margin-top: 50px; 
+
+}
+
+.checked {
+    color: orange;
+}
+
+
+
+
