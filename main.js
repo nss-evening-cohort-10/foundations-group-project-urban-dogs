@@ -49,13 +49,15 @@ const buildAlbums = (albumArray) => {
         domString += 
         `
         <div>
-            <div class="card album-card" style="width: 350px;">
+            <div class="card album-card" style="width: 340px;">
                 <img src="${album.albumArt}" class="card-img-top album-card-img-top" alt="Image of ${album.albumTitle}">
                 <div class="card-body" >
-                <audio controls preload>
-                <source src="${album.playSong}" type="audio/mpeg">
-                Your browser does not support the audio element.
-                </audio>
+                    <div style="margin: 0 auto; display: table;">
+                        <audio controls preload>
+                        <source src="${album.playSong}" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                        </audio>
+                    </div>
                 <h4 class="card-title album-card-title">${album.albumTitle}</h5>
                 
                 

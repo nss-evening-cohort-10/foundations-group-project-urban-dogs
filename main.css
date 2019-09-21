@@ -66,17 +66,19 @@ footer {
 .album-card-img-top {
     width: 250px;
     align-self: center;
-    margin: 20px;
-    border-radius: 10px;
+    margin-top: 20px;
+    border-radius: 15px;
 }
 
 .album-card {
     background-color: slategray;
     margin: 10px;
+    border-radius: 20px;
 }
 
 .album-card-title {
     text-align: center;
+    margin-top: .5em;
 
 }
 
@@ -89,5 +91,7 @@ footer {
 .album-row {
     justify-content: center;
 }
+
+
 
 /* Album page CSS END*/
