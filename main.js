@@ -73,7 +73,7 @@ const upcomingConcertBuilder = (myArr)=> {
                 <p class="card-title">${myArr[i].date}</p>
                 <p class="card-text">${myArr[i].venue}</p>
                 <h3>Rating</h3>
-                <p class="card-text">${myArr[i].review}</p>
+                <p class="card-review">${myArr[i].review}</p>
                 <a href="https://www.google.com/search?q=concertthicket+for+sale&rlz=1C5CHFA_enUS860US863&oq=concertthicket+for+sale&aqs=chrome..69i57.7744j0j4&sourceid=chrome&ie=UTF-8&ibp=htl;events&rciv=evn&sa=X&ved=2ahUKEwjr3snm3N3kAhUCCawKHdmsCDQQ5rwDKAF6BAgSEAw#fpstate=tldetail&htidocid=pfQmZUVQKTbYCx3VJpA8-A%3D%3D&htivrt=events" class="btn btn-primary">Concert Tickets</a>
             </div>
         </div>

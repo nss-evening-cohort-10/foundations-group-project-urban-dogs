@@ -5,27 +5,25 @@ body {
 .page-title {
     margin-top: 30px;
     margin-left: 160px;
-    background-color: aquamarine; 
+    /* background-color: white;  */
     text-align: center;
     text-shadow: 100px;
+    color: white;
     margin-bottom: 30px;
     margin-right: 160px;
 }
 
-/* .card {
-    width: 350px;
-    /* margin: 0 auto; */
-    /* margin-left: 50px; */
-/* } */ 
 
 .card-img-top {
     width: 350px;
     height: 350px;
+    
 }
 
 .heni {
     margin-bottom: 50px;
     margin-top: 50px; 
+    /* background-color: slategray; */
 
 }
 
@@ -33,6 +31,29 @@ body {
     color: orange;
 }
 
+.card-title {
+    background-color: rgb(255, 253, 127);
+    font-style: italic;
+    font-weight: bold;
+    
+}
 
+.card-text {
+    background-color: rgb(127, 255, 249);
+    font-style: italic;
+}
 
+/* .container {
+    background-color: slategray;
 
+} */
+
+/* #concert-card {
+    background-color: slategray;
+
+} */
+
+.card-body {
+    background-color: slategray;
+
+}
