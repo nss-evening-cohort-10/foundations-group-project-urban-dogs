@@ -41,6 +41,7 @@ body {
 .card-text {
     background-color: rgb(127, 255, 249);
     font-style: italic;
+    align-content: center;
 }
 
 /* .container {
