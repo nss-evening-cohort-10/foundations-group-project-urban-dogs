@@ -1,5 +1,44 @@
 body {
     background-color: black;
+    margin: 0 auto;
+}
+
+.dates-page-title {
+    margin-top: 30px;
+    text-align: center;
+    text-shadow: 100px;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.dates-card-img-top {
+    width: 350px;
+    height: 350px;
+}
+
+.main-container1 {
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.checked {
+    color: orange;
+}
+
+.dates-card-title {
+    background-color: rgb(255, 253, 127);
+    font-style: italic;
+    font-weight: bold;
+}
+
+.dates-card-text{
+    background-color: rgb(127, 255, 249);
+    font-style: italic;
+    align-content: center;
+}
+
+.dates-card-body {
+    background-color: slategray;
 }
 
 #heading {
@@ -195,5 +234,3 @@ background-color: slategray;
 .album-row {
     justify-content: center;
 }
-
-
