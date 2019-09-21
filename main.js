@@ -4,7 +4,7 @@ console.log("hey guys");
 const bandGear = [
     {
     TShirt: 'Classic Rock',
-    Picture: 'UDtshirts/Classic Rock T.jpg',
+    Picture: 'UDtshirts/ClassicRockT.jpg',
     Price: '$29.99',
     Size: 'S, M, L, XL, XXL',
     Availability: 'Available',
@@ -12,7 +12,7 @@ const bandGear = [
 
     {
     TShirt: 'Dog Band',
-    Picture: 'UDtshirts/Dog Band T.jpg',
+    Picture: 'UDtshirts/DogBandT.jpg',
     Price: '$19.99',
     Size: 'S, M, L, XL, XXL',
     Availability: 'Available',
@@ -20,7 +20,7 @@ const bandGear = [
 
     {
     TShirt: 'Jeruselum',
-    Picture: 'UDtshirts/Jerusalem T.jpg',
+    Picture: 'UDtshirts/JerusalemT.jpg',
     Price: '$29.99',
     Size: 'S, M, L, XL, XXL',
     Availability: 'Limited Availability',
@@ -28,7 +28,7 @@ const bandGear = [
 
     {
     TShirt: 'Pug Life',
-    Picture: 'UDtshirts/Pug Life T.jpg',
+    Picture: 'UDtshirts/PugLifeT.jpg',
     Price: '$17.99',
     Size: 'S, M, L, XL, XXL',
     Availability: 'Limited Availability',
@@ -36,7 +36,7 @@ const bandGear = [
 
     {
     TShirt: 'Crazy Dog',
-    Picture: 'UDtshirts/Crazy Dog T.jpeg',
+    Picture: 'UDtshirts/CrazyDogT.jpeg',
     Price: '$12.99',
     Size: 'S, M, L, XL, XXL',
     Availability: 'Available',
@@ -44,7 +44,7 @@ const bandGear = [
 
     {
     TShirt: 'Wild Thing',
-    Picture: 'UDtshirts/Wild Thing T.jpg',
+    Picture: 'UDtshirts/WildThingT.jpg',
     Price: '$14.99',
     Size: 'S, M, L, XL, XXL',
     Availability: 'Available',
