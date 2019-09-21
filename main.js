@@ -1,5 +1,5 @@
 
-
+// Album Array Data Start
 const albums =
 [
 {
@@ -33,15 +33,15 @@ songs: [ 'Be Friends' , 'Limo Life' , 'Dragnet' ],
 playSong: './Music/song5.mp3',
 }
 ]
+// Album Array Data End
 
-
-
+// Print to DOM function for all START
 const printToDom = (divId, textToPrint) => {
     document.getElementById(divId).innerHTML = textToPrint
 }
+// Print to DOM function for all END
 
-printToDom("albumCards", 'hi');
-
+// Album card builder Function START
 const buildAlbums = (albumArray) => {
     let domString = '';
     for(let i = 0; i < albums.length; i++) {
@@ -77,5 +77,6 @@ const buildAlbums = (albumArray) => {
     }
     printToDom("albumCards", domString)
 };
+// Album card builder Function END
 
 buildAlbums(albums);
