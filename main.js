@@ -23,7 +23,7 @@ const bandGear = [
     Picture: 'UDtshirts/Jerusalem T.jpg',
     Price: '$29.99',
     Size: 'S, M, L, XL, XXL',
-    Availability: 'Sold Out',
+    Availability: 'Limited Availability',
     },
 
     {
@@ -31,12 +31,12 @@ const bandGear = [
     Picture: 'UDtshirts/Pug Life T.jpg',
     Price: '$17.99',
     Size: 'S, M, L, XL, XXL',
-    Availability: 'Sold Out',
+    Availability: 'Limited Availability',
     },
 
     {
-    TShirt: 'Pug',
-    Picture: 'UDtshirts/Pug T.jpg',
+    TShirt: 'Crazy Dog',
+    Picture: 'UDtshirts/Crazy Dog T.jpeg',
     Price: '$12.99',
     Size: 'S, M, L, XL, XXL',
     Availability: 'Available',
@@ -57,26 +57,42 @@ printToDom = (divId, textToPrint) => {
     divContainer.innerHTML = textToPrint
 };
 
+const addToCart = (e) => {
+    alert("Cart is Full")
+};
+
+const attachEvents = () => {
+// get elements by class name and store in a variable
+const buttons = document.getElementsByClassName('full')
+// then loop over the elements and attach event listener to each element in collection
+for (let i = 0; i < buttons.length; i++) {
+    buttons[i].addEventListener('click', addToCart)
+}
+}
+
 // create function to iterate through cards/array
 const printGear = (arr) => {
-    let domString = '<div class="row">';
+    let domString = '<div class="row gear-row">';
     for (let i = 0; i < arr.length; i++) {
         domString += `
-        <div class="col-4">
-            <h5 class="card-title">${arr[i].TShirt}</h5>
-            <div class="card" style="width: 18rem;">
-                <img src="${arr[i].Picture}" class="card-img-top" alt="...">
-                <div class="card-body">
+        <div>
+            <h5 class="card-title gear-card-title">${arr[i].TShirt}</h5>
+            <div class="card gear-card" style="width: 300px">
+                <img src="${arr[i].Picture}" class="card-img-top gear-card-img-top" alt="...">
+                <div class="card-body gear-card-body">
                     <p class="card-text">${arr[i].Price}</p>
                     <p class="card-text">${arr[i].Size}</p>
                     <p class="card-text">${arr[i].Availability}</p>
+                    <button type="button" class="btn btn-danger full">Add to Cart</button>
                 </div>
             </div>
         </div>
         `
     } 
     domString += '</div>'
-    console.log(domString);
     printToDom('bandMerch', domString);
+    attachEvents();
 }
 printGear(bandGear);
+
+

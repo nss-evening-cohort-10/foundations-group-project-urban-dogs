@@ -7,25 +7,73 @@ body {
     text-align: center;
 }
 
-.container {
-    /* width: 250px;
-    height: 250px; */
-    /* margin: 20px; */
+.gear-card {
+    margin: 10px;
+    height: 540px;
 }
 
-.card-title {
+.gear-row {
+    justify-content: center;
+}
+
+.gear-card-title {
     text-align: center;
     color: white;
 }
 
-.card-body {
+.gear-card-body {
     text-align: center;
     border: solid black 2px;
     margin: 20px;
+    background-color:slategrey;
 }
 
-.card-img-top {
+.gear-card-img-top {
     margin: 20px;
     width: 250px;
+    height: 265px;
+}
+
+.navbar-custom {  
+    background-color: black;
+}
+
+.navbar-nav {
+color: white !important;
+}
+
+.navbar-dark .navbar-toggler {
+    color: rgba(255,255,255,.5);
+    border-color: rgba(255,255,255,.8);
+}
+
+.navbar-toggler {
+color: white !important;
+}
+
+.nav-link {
+    color: white;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+
+col-lg-4 i {
+    display:block;
+    text-align:center
+}
+
+.fab  {
+align-content: center;
+    color: white;
+    font-size: 2em;
+}
+
+.centered {
     align-self: center;
 }
+
