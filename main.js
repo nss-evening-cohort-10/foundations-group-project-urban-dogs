@@ -58,7 +58,7 @@ const upcomingConcertBuilder = (myArr)=> {
      
      <div class="main-container1">
         <div class="card" style="width: 350px;">
-                <img src="${myArr[i].image}" class="card-img-top" alt="...">
+                <img src="${myArr[i].image}" class="dates-card-img-top" alt="...">
                 <div class="card-body dates-card-body">
                 <p class="card-title dates-card-title">${myArr[i].date}</p>
                 <p class="card-text dates-card-text">${myArr[i].venue}</p>
