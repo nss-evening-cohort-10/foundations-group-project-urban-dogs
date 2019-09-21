@@ -33,18 +33,97 @@ footer {
     color: white;
 }
 
-col-lg-4 i {
-    display:block;
-    text-align:center
-}
 
 .fab  {
 align-content: center;
     color: white;
-    font-size: 2em;
+    font-size: 1.5em;
+    padding: 5px;
 
+}
+
+.container {
+    align-self: center;
+    padding: 10em;
+   
+    
 }
 
 .centered {
     align-self: center;
 }
+
+.domStuff {
+    margin: auto;
+}
+
+form {
+    background-color: slategray;
+    position: absolute;
+    left: 20px;
+    bottom: 30px;
+    z-index: 1;
+    height: 300px;
+    width: 300px;
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 20px 20px 50px grey;
+}
+
+/* body, html { */
+    /* height: 100%; */
+/* } */
+
+.hero-image {
+display: flex;
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: auto;
+    
+}
+
+/* The hero image */
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url();
+
+  /* Set a specific height */
+  height: 50%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: center;
+  text-shadow: black;
+  position: absolute;
+  top: 80%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  color: white;
+  padding: 10px;
+}
+
+.about-h1 {
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+}
+
+.card {
+background-color: slategray;
+}
+
+.card-text {
+    align-content: flex-start;
+}
+
+
+
