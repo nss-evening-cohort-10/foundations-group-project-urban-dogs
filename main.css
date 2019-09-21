@@ -2,14 +2,15 @@ body {
     background-color: black;
 }
 
+
 .navbar-custom {
-   
+    
     background-color: black;
 }
 
 .navbar-nav {
-color: white !important;
-
+    color: white !important;
+    
 }
 
 .navbar-dark .navbar-toggler {
@@ -19,7 +20,7 @@ color: white !important;
 
 
 .navbar-toggler {
-color: white !important;
+    color: white !important;
 }
 
 .nav-link {
@@ -35,19 +36,18 @@ footer {
 
 
 .fab  {
-align-content: center;
+    align-content: center;
     color: white;
     font-size: 1.5em;
     padding: 5px;
 
 }
 
-.container {
-    align-self: center;
-    padding: 10em;
-   
-    
-}
+.aboutCard {
+  margin: 10px 10px 10px 10px;
+  padding: 10px; 
+} 
+
 
 .centered {
     align-self: center;
@@ -123,7 +123,52 @@ background-color: slategray;
 
 .card-text {
     align-content: flex-start;
+
 }
 
+
+/* Album page CSS BEGIN*/
+
+.albumsHeading {
+    color: white;
+    text-align: center;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+                
+.albumCards {
+    color: white;
+    text-align: center;
+}
+
+
+.album-card-img-top {
+    width: 250px;
+    align-self: center;
+    margin-top: 20px;
+    border-radius: 15px;
+}
+
+.album-card {
+    background-color: slategray;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+.album-card-title {
+    text-align: center;
+    margin-top: .5em;
+
+}
+
+.album-card-header {
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+
+.album-row {
+    justify-content: center;
+}
 
 
