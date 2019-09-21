@@ -2,22 +2,50 @@ body {
     background-color: black;
 }
 
+#heading {
+    color: white;
+    text-align: center;
+}
 
-.navbar-custom {
-    
+.gear-card {
+    margin: 10px;
+    height: 540px;
+}
+
+.gear-row {
+    justify-content: center;
+}
+
+.gear-card-title {
+    text-align: center;
+    color: white;
+}
+
+.gear-card-body {
+    text-align: center;
+    border: solid black 2px;
+    margin: 20px;
+    background-color:slategrey;
+}
+
+.gear-card-img-top {
+    margin: 20px;
+    width: 250px;
+    height: 265px;
+}
+
+.navbar-custom {    
     background-color: black;
 }
 
 .navbar-nav {
-    color: white !important;
-    
+color: white !important;
 }
 
 .navbar-dark .navbar-toggler {
     color: rgba(255,255,255,.5);
     border-color: rgba(255,255,255,.8);
 }
-
 
 .navbar-toggler {
     color: white !important;
@@ -70,9 +98,6 @@ form {
     box-shadow: 20px 20px 50px grey;
 }
 
-/* body, html { */
-    /* height: 100%; */
-/* } */
 
 .hero-image {
 display: flex;

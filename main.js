@@ -1,5 +1,54 @@
-console.log("hey guys"
-);
+
+// Array of objects
+const bandGear = [
+    {
+    TShirt: 'Classic Rock',
+    Picture: 'UDtshirts/ClassicRockT.jpg',
+    Price: '$29.99',
+    Size: 'S, M, L, XL, XXL',
+    Availability: 'Available',
+    },
+
+    {
+    TShirt: 'Dog Band',
+    Picture: 'UDtshirts/DogBandT.jpg',
+    Price: '$19.99',
+    Size: 'S, M, L, XL, XXL',
+    Availability: 'Available',
+    },
+
+    {
+    TShirt: 'Jeruselum',
+    Picture: 'UDtshirts/JerusalemT.jpg',
+    Price: '$29.99',
+    Size: 'S, M, L, XL, XXL',
+    Availability: 'Limited Availability',
+    },
+
+    {
+    TShirt: 'Pug Life',
+    Picture: 'UDtshirts/PugLifeT.jpg',
+    Price: '$17.99',
+    Size: 'S, M, L, XL, XXL',
+    Availability: 'Limited Availability',
+    },
+
+    {
+    TShirt: 'Crazy Dog',
+    Picture: 'UDtshirts/CrazyDogT.jpeg',
+    Price: '$12.99',
+    Size: 'S, M, L, XL, XXL',
+    Availability: 'Available',
+},
+
+{
+    TShirt: 'Wild Thing',
+    Picture: 'UDtshirts/WildThingT.jpg',
+    Price: '$14.99',
+    Size: 'S, M, L, XL, XXL',
+    Availability: 'Available',
+}
+]
 
 const bioArr = [
 {
@@ -33,39 +82,7 @@ Instrument:"Turn Tables",
 Born: "Bronx, NY",
 Bio: "Hip Hop is life where Mike comes from turn tables are used to create a unique sound to the band. Being introduced to Hip Hop by his dad Imidiatly gravitated to the turn tables. Mike has Dj’ed for numbs groups before connecting  with Urban dogs. After being heard at an event in southern Cal. Mike was added to the group to complete the sound.",
 },
-
 ]
-
-
-const printToDom = (divId, textToPrint) => {
-document.getElementById(divId).innerHTML= textToPrint
-
-}
-const bandBuilder = (bioInfo) => {
-    let domString ='';
-    for(let i=0; i <bioArr.length; i++) {
-        const bio = bioInfo[i];
-        domString += `
-        <div class= "domStuff">
-                <div class="card aboutCard" style="width: 340px;">
-                        <img src="${bio.Image}" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h3 class="card-title">${bio.Name}</h3>
-                            <p class="card-text">${bio.Instrument}</p>
-                            <h4 class="card-text">${bio.Born}</h4>
-                            <p class="card-text">${bio.Bio}</p>
-                        </div>
-                </div>
-   </div>
-       
-
-        `;
-
-    }
-printToDom("theband", domString);
-
-};
-
 
 // Album Array Data Start
 const albums =
@@ -104,6 +121,74 @@ playSong: './Music/song5.mp3',
 // Album Array Data End
 
 
+
+const addToCart = (e) => {
+    alert("Cart is Full")
+};
+
+const attachEvents = () => {
+// get elements by class name and store in a variable
+const buttons = document.getElementsByClassName('full')
+// then loop over the elements and attach event listener to each element in collection
+for (let i = 0; i < buttons.length; i++) {
+    buttons[i].addEventListener('click', addToCart)
+}
+}
+
+// create function to iterate through cards/array
+const printGear = (arr) => {
+    let domString = '<div class="row gear-row">';
+    for (let i = 0; i < arr.length; i++) {
+        domString += `
+        <div>
+            <h5 class="card-title gear-card-title">${arr[i].TShirt}</h5>
+            <div class="card gear-card" style="width: 300px">
+                <img src="${arr[i].Picture}" class="card-img-top gear-card-img-top" alt="...">
+                <div class="card-body gear-card-body">
+                    <p class="card-text">${arr[i].Price}</p>
+                    <p class="card-text">${arr[i].Size}</p>
+                    <p class="card-text">${arr[i].Availability}</p>
+                    <button type="button" class="btn btn-danger full">Add to Cart</button>
+                </div>
+            </div>
+        </div>    
+        `
+    }
+    domString += '</div>'
+    printToDom('bandMerch', domString);
+    attachEvents();           
+};
+            
+            
+
+const printToDom = (divId, textToPrint) => {
+    document.getElementById(divId).innerHTML= textToPrint
+    
+}
+const bandBuilder = (bioInfo) => {
+    let domString ='';
+    for(let i=0; i <bioArr.length; i++) {
+        const bio = bioInfo[i];
+        domString += 
+        `
+        <div class= "domStuff">
+        <div class="card aboutCard" style="width: 340px;">
+        <img src="${bio.Image}" class="card-img-top" alt="...">
+        <div class="card-body">
+        <h3 class="card-title">${bio.Name}</h3>
+        <p class="card-text">${bio.Instrument}</p>
+        <h4 class="card-text">${bio.Born}</h4>
+        <p class="card-text">${bio.Bio}</p>
+        </div>
+        </div>
+        </div>
+        `       
+    } 
+    printToDom("theband", domString);
+}
+
+
+
 // Album card builder Function START
 const buildAlbums = (albumArray) => {
     let domString = '';
@@ -132,12 +217,11 @@ const buildAlbums = (albumArray) => {
                         <li class="list-group-item">3. ${album.songs[2]}</li>
                         
                     </ul>
-                    
                 </div>
             </div>
         </div>
         `
-    }
+}
     printToDom("albumCards", domString)
 };
 // Album card builder Function END
@@ -149,13 +233,12 @@ const init = () => {
         bandBuilder(bioArr);
         } else if(document.URL.includes('album')){
         buildAlbums(albums);
-        // } else if(document.URL.includes('album')){
-        // buildAlbums(albums);
+        } else if(document.URL.includes('gear')){
+        printGear(bandGear);
         // } else if(document.URL.includes('album')){
         // buildAlbums(albums);
     
 }
 }
- 
 
 init(); 
